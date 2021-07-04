@@ -1,0 +1,12 @@
+{% extends "lunch/base.html" %}
+{% load static %}
+{% block content %}
+<h1>El menu de hoy</h1>
+<p>{{menu.message}}</p>
+<p>Menu: {{ menu.name }}</p>
+<h2>Opciones</h2>
+{% for option in menu.menu_option.all %}
+    <p for="option_1">opcion {{ forloop.counter }}: {{option.option}}</p>
+{% endfor %}
+<a href="{%url 'menu'%}">Solicitar</a>
+{% endblock %}

@@ -47,6 +47,9 @@ INSTALLED_APPS = [
     "rest_framework",
     "django_extensions",
     "backend_test.utils",
+    'docs',
+    "lunch",
+    "employees",
 ]
 
 MIDDLEWARE = [
@@ -235,3 +238,15 @@ LOGGING = {
         },
     },
 }
+
+# slack conf
+SLACK_CHANNEL = os.getenv("SLACK_CHANNEL", "#random")
+SLACK_OAUTH_ACCESS_TOKEN = os.getenv("SLACK_OAUTH_ACCESS_TOKEN", "xoxb-2226119933812-2234747588997-xcctuvNjkv9oqEESJZoZC0mx")
+
+# Meal
+LIMIT_HOUR = os.getenv("LIMIT_HOUR", 11)
+MENU_CREATE_HOUR = os.getenv("MENU_CREATE_HOUR", 23)
+EMPLOYEES_TIME_ZONE = "America/Santiago"
+
+
+LOCAL_SITE = os.getenv("LOCAL_SITE", "http://0.0.0.0:8000/menu/")

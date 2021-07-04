@@ -1,0 +1,22 @@
+{% extends "lunch/base.html" %}
+{% load static %}
+{% load i18n %}
+{% block content %}
+{% if orders_list %}
+    <ul>
+        {% for order in orders_list %}
+        <li>
+            {% language 'es' %}
+            <p> El empleado {{ order }}
+            {% if order.customizations  %}
+            checate esto: {{ order.customizations }}
+            {% endif %}
+            </p>
+            {% endlanguage %}
+      </li>
+      {% endfor %}
+    </ul>
+        {% else %}
+        <p>There are no orders.</p>
+        {% endif %}
+{% endblock %}

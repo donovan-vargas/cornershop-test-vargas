@@ -35,6 +35,9 @@ up|run|server|runserver)
 celery)
   celery -A $APP worker -Q $QUEUES
 ;;
+celerybeat)
+  celery -A $APP beat -l info
+;;
 test)
   pytest "$@" --flake8 --isort --black --junitxml=/dev/shm/test-results/pytest.xml
 ;;

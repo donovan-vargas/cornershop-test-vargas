@@ -1,9 +1,14 @@
 ## cornershop-backend-test
 
+
 ### Running the development environment
 
 * `make up`
 * `dev up`
+
+##### Install users and nora
+
+* `sh backend_test/utils/install_users.sh`
 
 ##### Rebuilding the base Docker image
 

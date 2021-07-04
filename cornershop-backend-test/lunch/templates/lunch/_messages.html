@@ -1,0 +1,30 @@
+{% if messages %}
+    <div class="">
+    <div class="">
+        {% for message in messages %}
+            {% if message.tags == 'error' %}
+                <div class=""
+            {% else %}
+                <div class="">
+            {% endif %}
+            <strong>{{ message }}</strong>
+        <button type="button" class="close" data-dismiss="alert">&times;</button>
+        </div>
+        {% endfor %}
+        </div>
+        {% if form.errors %}
+                {% for field in form %}
+                    {% for error in field.errors %}
+                        <div class="" role="">
+                            <strong>{{ error|escape }}</strong>
+                        </div>
+                    {% endfor %}
+                {% endfor %}
+                {% for error in form.non_field_errors %}
+                    <div class="" role="">
+                        <strong>{{ error|escape }}</strong>
+                    </div>
+                {% endfor %}
+            {% endif %}
+    </div>
+{% endif %}

@@ -1,0 +1,12 @@
+{% extends "lunch/base.html" %}
+{% load static %}
+{% block content %}
+{% if perms.menu.can_create_menu %}
+<a href="{% url 'menu-add' %}">Nuevo menu</a>
+{% endif %}
+<a href="{% url 'menu' %}">Ordenar menu</a>
+{% if perms.orders.can_see_orders %}
+<a href="{% url 'orders-list' %}">Ordenes del dia</a>
+{% endif %}
+
+{% endblock %}

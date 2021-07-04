@@ -1,0 +1,31 @@
+{% extends "lunch/base.html" %}
+{% load static %}
+{% block content %}
+<div class="container">
+    <div class="row center-block" style="width:300px">
+        <h1 class="text-center">Iniciar sesión</h1>
+        {% if mensaje %}
+            <div class="">{{mensaje}}</div>
+        {% endif %}
+        <form action="" method="post">
+            {% csrf_token %}
+            {% for field in form %}
+            <fieldset class="">
+                <label class="" for="id_{{field.name}}">{{field.label}}</label>
+                <div class="">
+                    <div class="g">
+                        <span class="">
+                            <span class=""></span>
+                        </span>
+                        {{field}}
+                        <p class="help-text">{{field.help_text}} </p>
+                    </div>
+                </div>
+            </fieldset>
+            {% endfor %}
+            <br>
+            <input class="" type="submit" value="Entrar" />
+        </form>
+    </div>
+</div>
+{% endblock %}

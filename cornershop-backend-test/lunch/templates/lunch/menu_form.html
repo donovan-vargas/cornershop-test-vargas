@@ -1,0 +1,40 @@
+{% extends "lunch/base.html" %}
+{% load static %}
+{% load i18n %}
+{% block content %}
+<form action="" method="post">
+    {% csrf_token %}
+    {{ form.as_p }}
+{% if not request.resolver_match.url_name == 'menu-update'  %}
+    <label for="option_1">opcion 1: </label>
+    <input type="text" name="option" id="option_1"><br>
+    <label for="option_1">opcion 2: </label>
+    <input type="text" name="option" id="option_2"><br>
+    <label for="option_1">opcion 3: </label>
+    <input type="text" name="option" id="option_3"><br>
+    <label for="option_1">opcion 4: </label>
+    <input type="text" name="option" id="option_4"><br>
+    <input type="submit" value="Submit">
+</form>
+{% if menu_list %}
+    <ul>
+      {% for menu in menu_list %}
+      <li>
+        {% language 'es' %}
+        <p> menu: {{ menu.name }} para el dia {{menu.date}} <a href="{% url 'menu-update' menu.pk%}">Editar</a></p>
+        {% endlanguage %}
+      </li>
+      {% endfor %}
+    </ul>
+    {% else %}
+      <p>No hay menus.</p>
+    {% endif %}
+{% else %}
+{% for option in menu_list.menu_option.all %}
+ <label for="option_1">opcion {{ forloop.counter }}: </label>
+    <input type="text" name="option" value="{{option.option}}" ><br>
+{% endfor %}
+<input type="submit" value="Submit">
+{% endif %}
+
+{% endblock %}
