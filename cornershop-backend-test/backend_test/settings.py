@@ -241,7 +241,7 @@ LOGGING = {
 
 # slack conf
 SLACK_CHANNEL = os.getenv("SLACK_CHANNEL", "#random")
-SLACK_OAUTH_ACCESS_TOKEN = os.getenv("SLACK_OAUTH_ACCESS_TOKEN", "xoxb-2226119933812-2234747588997-xcctuvNjkv9oqEESJZoZC0mx")
+SLACK_OAUTH_ACCESS_TOKEN = os.getenv("SLACK_OAUTH_ACCESS_TOKEN", "xoxb-xxxxxxxxxxx")
 
 # Meal
 LIMIT_HOUR = os.getenv("LIMIT_HOUR", 11)  # 24 hors format
