@@ -1,0 +1,346 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>lunch.tests package &#8212; backend_test 1.0 documentation</title>
+    <link rel="stylesheet" href="_static/alabaster.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+    <script type="text/javascript" src="_static/jquery.js"></script>
+    <script type="text/javascript" src="_static/underscore.js"></script>
+    <script type="text/javascript" src="_static/doctools.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+   
+  <link rel="stylesheet" href="_static/custom.css" type="text/css" />
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          
+
+          <div class="body" role="main">
+            
+  <div class="section" id="lunch-tests-package">
+<h1>lunch.tests package<a class="headerlink" href="#lunch-tests-package" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="submodules">
+<h2>Submodules<a class="headerlink" href="#submodules" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="module-lunch.tests.test_forms">
+<span id="lunch-tests-test-forms-module"></span><h2>lunch.tests.test_forms module<a class="headerlink" href="#module-lunch.tests.test_forms" title="Permalink to this headline">¶</a></h2>
+<dl class="class">
+<dt id="lunch.tests.test_forms.MenuFormTestCase">
+<em class="property">class </em><code class="descclassname">lunch.tests.test_forms.</code><code class="descname">MenuFormTestCase</code><span class="sig-paren">(</span><em>methodName='runTest'</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/lunch/tests/test_forms.html#MenuFormTestCase"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#lunch.tests.test_forms.MenuFormTestCase" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">django.test.testcases.TestCase</span></code></p>
+<p>Menu form test cases</p>
+<dl class="method">
+<dt id="lunch.tests.test_forms.MenuFormTestCase.setUp">
+<code class="descname">setUp</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/lunch/tests/test_forms.html#MenuFormTestCase.setUp"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#lunch.tests.test_forms.MenuFormTestCase.setUp" title="Permalink to this definition">¶</a></dt>
+<dd><p>setup</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="lunch.tests.test_forms.MenuFormTestCase.test_date_form">
+<code class="descname">test_date_form</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/lunch/tests/test_forms.html#MenuFormTestCase.test_date_form"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#lunch.tests.test_forms.MenuFormTestCase.test_date_form" title="Permalink to this definition">¶</a></dt>
+<dd><p>Validate cant create menu for yesterday</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="lunch.tests.test_forms.MenuFormTestCase.test_menu_form">
+<code class="descname">test_menu_form</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/lunch/tests/test_forms.html#MenuFormTestCase.test_menu_form"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#lunch.tests.test_forms.MenuFormTestCase.test_menu_form" title="Permalink to this definition">¶</a></dt>
+<dd><p>Menu form test</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="lunch.tests.test_forms.MenuFormTestCase.test_menu_form_required_date">
+<code class="descname">test_menu_form_required_date</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/lunch/tests/test_forms.html#MenuFormTestCase.test_menu_form_required_date"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#lunch.tests.test_forms.MenuFormTestCase.test_menu_form_required_date" title="Permalink to this definition">¶</a></dt>
+<dd><p>Menu form test
+required name</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="lunch.tests.test_forms.MenuFormTestCase.test_menu_form_required_name">
+<code class="descname">test_menu_form_required_name</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/lunch/tests/test_forms.html#MenuFormTestCase.test_menu_form_required_name"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#lunch.tests.test_forms.MenuFormTestCase.test_menu_form_required_name" title="Permalink to this definition">¶</a></dt>
+<dd><p>Menu form test
+required name</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="lunch.tests.test_forms.OrderFormTestCase">
+<em class="property">class </em><code class="descclassname">lunch.tests.test_forms.</code><code class="descname">OrderFormTestCase</code><span class="sig-paren">(</span><em>methodName='runTest'</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/lunch/tests/test_forms.html#OrderFormTestCase"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#lunch.tests.test_forms.OrderFormTestCase" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">django.test.testcases.TestCase</span></code></p>
+<p>Order form test cases</p>
+<dl class="method">
+<dt id="lunch.tests.test_forms.OrderFormTestCase.setUp">
+<code class="descname">setUp</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/lunch/tests/test_forms.html#OrderFormTestCase.setUp"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#lunch.tests.test_forms.OrderFormTestCase.setUp" title="Permalink to this definition">¶</a></dt>
+<dd><p>setup</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="lunch.tests.test_forms.OrderFormTestCase.test_menu_form">
+<code class="descname">test_menu_form</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/lunch/tests/test_forms.html#OrderFormTestCase.test_menu_form"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#lunch.tests.test_forms.OrderFormTestCase.test_menu_form" title="Permalink to this definition">¶</a></dt>
+<dd><p>Order form test time</p>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="module-lunch.tests.test_models">
+<span id="lunch-tests-test-models-module"></span><h2>lunch.tests.test_models module<a class="headerlink" href="#module-lunch.tests.test_models" title="Permalink to this headline">¶</a></h2>
+<dl class="class">
+<dt id="lunch.tests.test_models.MenuOptionsTestCase">
+<em class="property">class </em><code class="descclassname">lunch.tests.test_models.</code><code class="descname">MenuOptionsTestCase</code><span class="sig-paren">(</span><em>methodName='runTest'</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/lunch/tests/test_models.html#MenuOptionsTestCase"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#lunch.tests.test_models.MenuOptionsTestCase" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">django.test.testcases.TestCase</span></code></p>
+<p>Test case for menu options implements TestCase class</p>
+<dl class="method">
+<dt id="lunch.tests.test_models.MenuOptionsTestCase.setUp">
+<code class="descname">setUp</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/lunch/tests/test_models.html#MenuOptionsTestCase.setUp"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#lunch.tests.test_models.MenuOptionsTestCase.setUp" title="Permalink to this definition">¶</a></dt>
+<dd><p>Setup Menu options test case</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="lunch.tests.test_models.MenuOptionsTestCase.test_menu">
+<code class="descname">test_menu</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/lunch/tests/test_models.html#MenuOptionsTestCase.test_menu"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#lunch.tests.test_models.MenuOptionsTestCase.test_menu" title="Permalink to this definition">¶</a></dt>
+<dd><p>Correct menu option get</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="lunch.tests.test_models.MenuOptionsTestCase.test_name_max_length">
+<code class="descname">test_name_max_length</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/lunch/tests/test_models.html#MenuOptionsTestCase.test_name_max_length"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#lunch.tests.test_models.MenuOptionsTestCase.test_name_max_length" title="Permalink to this definition">¶</a></dt>
+<dd><p>menu option max_length test</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="lunch.tests.test_models.MenuTestCase">
+<em class="property">class </em><code class="descclassname">lunch.tests.test_models.</code><code class="descname">MenuTestCase</code><span class="sig-paren">(</span><em>methodName='runTest'</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/lunch/tests/test_models.html#MenuTestCase"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#lunch.tests.test_models.MenuTestCase" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">django.test.testcases.TestCase</span></code></p>
+<p>Test case for menu implements TestCase class</p>
+<dl class="method">
+<dt id="lunch.tests.test_models.MenuTestCase.setUp">
+<code class="descname">setUp</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/lunch/tests/test_models.html#MenuTestCase.setUp"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#lunch.tests.test_models.MenuTestCase.setUp" title="Permalink to this definition">¶</a></dt>
+<dd><p>Setup Menu test case</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="lunch.tests.test_models.MenuTestCase.test_menu">
+<code class="descname">test_menu</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/lunch/tests/test_models.html#MenuTestCase.test_menu"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#lunch.tests.test_models.MenuTestCase.test_menu" title="Permalink to this definition">¶</a></dt>
+<dd><p>Test menu name get</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="lunch.tests.test_models.MenuTestCase.test_message_max_length">
+<code class="descname">test_message_max_length</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/lunch/tests/test_models.html#MenuTestCase.test_message_max_length"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#lunch.tests.test_models.MenuTestCase.test_message_max_length" title="Permalink to this definition">¶</a></dt>
+<dd><p>Test menu message max_length</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="lunch.tests.test_models.MenuTestCase.test_name_max_length">
+<code class="descname">test_name_max_length</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/lunch/tests/test_models.html#MenuTestCase.test_name_max_length"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#lunch.tests.test_models.MenuTestCase.test_name_max_length" title="Permalink to this definition">¶</a></dt>
+<dd><p>Test menu name max_length</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="lunch.tests.test_models.MenuTestCase.test_sent">
+<code class="descname">test_sent</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/lunch/tests/test_models.html#MenuTestCase.test_sent"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#lunch.tests.test_models.MenuTestCase.test_sent" title="Permalink to this definition">¶</a></dt>
+<dd><p>Test menu sent</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="lunch.tests.test_models.MenuTestCase.test_uuid">
+<code class="descname">test_uuid</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/lunch/tests/test_models.html#MenuTestCase.test_uuid"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#lunch.tests.test_models.MenuTestCase.test_uuid" title="Permalink to this definition">¶</a></dt>
+<dd><p>Test menu unique id uuid field</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="lunch.tests.test_models.MenuTestCase.test_validate_date">
+<code class="descname">test_validate_date</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/lunch/tests/test_models.html#MenuTestCase.test_validate_date"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#lunch.tests.test_models.MenuTestCase.test_validate_date" title="Permalink to this definition">¶</a></dt>
+<dd><p>Test menu date</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="lunch.tests.test_models.OrdersTestCase">
+<em class="property">class </em><code class="descclassname">lunch.tests.test_models.</code><code class="descname">OrdersTestCase</code><span class="sig-paren">(</span><em>methodName='runTest'</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/lunch/tests/test_models.html#OrdersTestCase"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#lunch.tests.test_models.OrdersTestCase" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">django.test.testcases.TestCase</span></code></p>
+<p>Test case for menu options implements TestCase class</p>
+<dl class="method">
+<dt id="lunch.tests.test_models.OrdersTestCase.setUp">
+<code class="descname">setUp</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/lunch/tests/test_models.html#OrdersTestCase.setUp"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#lunch.tests.test_models.OrdersTestCase.setUp" title="Permalink to this definition">¶</a></dt>
+<dd><p>Setup orders test case</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="lunch.tests.test_models.OrdersTestCase.test_orders">
+<code class="descname">test_orders</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/lunch/tests/test_models.html#OrdersTestCase.test_orders"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#lunch.tests.test_models.OrdersTestCase.test_orders" title="Permalink to this definition">¶</a></dt>
+<dd><p>Correct orders get</p>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="module-lunch.tests.test_task">
+<span id="lunch-tests-test-task-module"></span><h2>lunch.tests.test_task module<a class="headerlink" href="#module-lunch.tests.test_task" title="Permalink to this headline">¶</a></h2>
+<dl class="class">
+<dt id="lunch.tests.test_task.SendMenuTaskTestCase">
+<em class="property">class </em><code class="descclassname">lunch.tests.test_task.</code><code class="descname">SendMenuTaskTestCase</code><span class="sig-paren">(</span><em>methodName='runTest'</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/lunch/tests/test_task.html#SendMenuTaskTestCase"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#lunch.tests.test_task.SendMenuTaskTestCase" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">django.test.testcases.TestCase</span></code></p>
+<p>Celery sent menu to employees test case implement TestCase</p>
+<dl class="method">
+<dt id="lunch.tests.test_task.SendMenuTaskTestCase.setUp">
+<code class="descname">setUp</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/lunch/tests/test_task.html#SendMenuTaskTestCase.setUp"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#lunch.tests.test_task.SendMenuTaskTestCase.setUp" title="Permalink to this definition">¶</a></dt>
+<dd><p>Setup</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="lunch.tests.test_task.SendMenuTaskTestCase.test_fail">
+<code class="descname">test_fail</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/lunch/tests/test_task.html#SendMenuTaskTestCase.test_fail"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#lunch.tests.test_task.SendMenuTaskTestCase.test_fail" title="Permalink to this definition">¶</a></dt>
+<dd><p>asert false if not menu fot today</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="lunch.tests.test_task.SendMenuTaskTestCase.test_success">
+<code class="descname">test_success</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/lunch/tests/test_task.html#SendMenuTaskTestCase.test_success"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#lunch.tests.test_task.SendMenuTaskTestCase.test_success" title="Permalink to this definition">¶</a></dt>
+<dd><p>asert false if menu fot today</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="lunch.tests.test_task.SendMessageSlack">
+<em class="property">class </em><code class="descclassname">lunch.tests.test_task.</code><code class="descname">SendMessageSlack</code><span class="sig-paren">(</span><em>methodName='runTest'</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/lunch/tests/test_task.html#SendMessageSlack"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#lunch.tests.test_task.SendMessageSlack" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">django.test.testcases.TestCase</span></code></p>
+<p>Test case send message to slack chanel</p>
+<dl class="method">
+<dt id="lunch.tests.test_task.SendMessageSlack.test_send_fail">
+<code class="descname">test_send_fail</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/lunch/tests/test_task.html#SendMessageSlack.test_send_fail"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#lunch.tests.test_task.SendMessageSlack.test_send_fail" title="Permalink to this definition">¶</a></dt>
+<dd><p>False test</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="lunch.tests.test_task.SendMessageSlack.test_send_success">
+<code class="descname">test_send_success</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/lunch/tests/test_task.html#SendMessageSlack.test_send_success"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#lunch.tests.test_task.SendMessageSlack.test_send_success" title="Permalink to this definition">¶</a></dt>
+<dd><p>Success test</p>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="module-lunch.tests.test_views">
+<span id="lunch-tests-test-views-module"></span><h2>lunch.tests.test_views module<a class="headerlink" href="#module-lunch.tests.test_views" title="Permalink to this headline">¶</a></h2>
+<dl class="class">
+<dt id="lunch.tests.test_views.MenuViewsTestCalls">
+<em class="property">class </em><code class="descclassname">lunch.tests.test_views.</code><code class="descname">MenuViewsTestCalls</code><span class="sig-paren">(</span><em>methodName='runTest'</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/lunch/tests/test_views.html#MenuViewsTestCalls"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#lunch.tests.test_views.MenuViewsTestCalls" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">django.test.testcases.TestCase</span></code></p>
+<dl class="method">
+<dt id="lunch.tests.test_views.MenuViewsTestCalls.setUp">
+<code class="descname">setUp</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/lunch/tests/test_views.html#MenuViewsTestCalls.setUp"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#lunch.tests.test_views.MenuViewsTestCalls.setUp" title="Permalink to this definition">¶</a></dt>
+<dd><p>Setup menu views test</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="lunch.tests.test_views.MenuViewsTestCalls.test_call_view_deny_anonymous">
+<code class="descname">test_call_view_deny_anonymous</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/lunch/tests/test_views.html#MenuViewsTestCalls.test_call_view_deny_anonymous"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#lunch.tests.test_views.MenuViewsTestCalls.test_call_view_deny_anonymous" title="Permalink to this definition">¶</a></dt>
+<dd><p>menu add login test</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="lunch.tests.test_views.MenuViewsTestCalls.test_call_view_load">
+<code class="descname">test_call_view_load</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/lunch/tests/test_views.html#MenuViewsTestCalls.test_call_view_load"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#lunch.tests.test_views.MenuViewsTestCalls.test_call_view_load" title="Permalink to this definition">¶</a></dt>
+<dd><p>menu template test</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="lunch.tests.test_views.MenuViewsTestCalls.test_call_view_permision">
+<code class="descname">test_call_view_permision</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/lunch/tests/test_views.html#MenuViewsTestCalls.test_call_view_permision"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#lunch.tests.test_views.MenuViewsTestCalls.test_call_view_permision" title="Permalink to this definition">¶</a></dt>
+<dd><p>test permission</p>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="module-lunch.tests">
+<span id="module-contents"></span><h2>Module contents<a class="headerlink" href="#module-lunch.tests" title="Permalink to this headline">¶</a></h2>
+</div>
+</div>
+
+
+          </div>
+          
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+<h1 class="logo"><a href="index.html">backend_test</a></h1>
+
+
+
+
+
+
+
+
+<h3>Navigation</h3>
+
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="index.html">Documentation overview</a><ul>
+  </ul></li>
+</ul>
+</div>
+<div id="searchbox" style="display: none" role="search">
+  <h3>Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" />
+      <input type="submit" value="Go" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+    </div>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+
+
+
+
+
+
+
+
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;2021, Donovan Vargas.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 1.8.2</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.12</a>
+      
+      |
+      <a href="_sources/lunch.tests.rst.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>

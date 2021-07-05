@@ -1,0 +1,171 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>lunch.migrations package &#8212; backend_test 1.0 documentation</title>
+    <link rel="stylesheet" href="_static/alabaster.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+    <script type="text/javascript" src="_static/jquery.js"></script>
+    <script type="text/javascript" src="_static/underscore.js"></script>
+    <script type="text/javascript" src="_static/doctools.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+   
+  <link rel="stylesheet" href="_static/custom.css" type="text/css" />
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          
+
+          <div class="body" role="main">
+            
+  <div class="section" id="lunch-migrations-package">
+<h1>lunch.migrations package<a class="headerlink" href="#lunch-migrations-package" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="submodules">
+<h2>Submodules<a class="headerlink" href="#submodules" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="module-lunch.migrations.0001_initial">
+<span id="lunch-migrations-0001-initial-module"></span><h2>lunch.migrations.0001_initial module<a class="headerlink" href="#module-lunch.migrations.0001_initial" title="Permalink to this headline">¶</a></h2>
+<dl class="class">
+<dt id="lunch.migrations.0001_initial.Migration">
+<em class="property">class </em><code class="descclassname">lunch.migrations.0001_initial.</code><code class="descname">Migration</code><span class="sig-paren">(</span><em>name</em>, <em>app_label</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/lunch/migrations/0001_initial.html#Migration"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#lunch.migrations.0001_initial.Migration" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">django.db.migrations.migration.Migration</span></code></p>
+<dl class="attribute">
+<dt id="lunch.migrations.0001_initial.Migration.dependencies">
+<code class="descname">dependencies</code><em class="property"> = [('auth', '__first__'), ('employees', '0001_initial')]</em><a class="headerlink" href="#lunch.migrations.0001_initial.Migration.dependencies" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="lunch.migrations.0001_initial.Migration.initial">
+<code class="descname">initial</code><em class="property"> = True</em><a class="headerlink" href="#lunch.migrations.0001_initial.Migration.initial" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="lunch.migrations.0001_initial.Migration.operations">
+<code class="descname">operations</code><em class="property"> = [&lt;CreateModel  name='Menu', fields=[('id', &lt;django.db.models.fields.AutoField&gt;), ('name', &lt;django.db.models.fields.CharField&gt;), ('message', &lt;django.db.models.fields.CharField&gt;), ('date', &lt;django.db.models.fields.DateField&gt;), ('sent', &lt;django.db.models.fields.BooleanField&gt;), ('created', &lt;django.db.models.fields.DateField&gt;), ('modified', &lt;django.db.models.fields.DateTimeField&gt;), ('active', &lt;django.db.models.fields.BooleanField&gt;), ('menu_user', &lt;django.db.models.fields.related.ForeignKey&gt;)]&gt;, &lt;CreateModel  name='MenuOptions', fields=[('id', &lt;django.db.models.fields.AutoField&gt;), ('option', &lt;django.db.models.fields.CharField&gt;), ('created', &lt;django.db.models.fields.DateField&gt;), ('modified', &lt;django.db.models.fields.DateTimeField&gt;), ('active', &lt;django.db.models.fields.BooleanField&gt;), ('menu', &lt;django.db.models.fields.related.ForeignKey&gt;)]&gt;, &lt;CreateModel  name='Orders', fields=[('id', &lt;django.db.models.fields.AutoField&gt;), ('customizations', &lt;django.db.models.fields.TextField&gt;), ('created', &lt;django.db.models.fields.DateTimeField&gt;), ('modified', &lt;django.db.models.fields.DateTimeField&gt;), ('active', &lt;django.db.models.fields.BooleanField&gt;), ('employee', &lt;django.db.models.fields.related.ForeignKey&gt;), ('option', &lt;django.db.models.fields.related.ForeignKey&gt;)]&gt;]</em><a class="headerlink" href="#lunch.migrations.0001_initial.Migration.operations" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="module-lunch.migrations.0002_auto_20210702_1647">
+<span id="lunch-migrations-0002-auto-20210702-1647-module"></span><h2>lunch.migrations.0002_auto_20210702_1647 module<a class="headerlink" href="#module-lunch.migrations.0002_auto_20210702_1647" title="Permalink to this headline">¶</a></h2>
+<dl class="class">
+<dt id="lunch.migrations.0002_auto_20210702_1647.Migration">
+<em class="property">class </em><code class="descclassname">lunch.migrations.0002_auto_20210702_1647.</code><code class="descname">Migration</code><span class="sig-paren">(</span><em>name</em>, <em>app_label</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/lunch/migrations/0002_auto_20210702_1647.html#Migration"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#lunch.migrations.0002_auto_20210702_1647.Migration" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">django.db.migrations.migration.Migration</span></code></p>
+<dl class="attribute">
+<dt id="lunch.migrations.0002_auto_20210702_1647.Migration.dependencies">
+<code class="descname">dependencies</code><em class="property"> = [('lunch', '0001_initial')]</em><a class="headerlink" href="#lunch.migrations.0002_auto_20210702_1647.Migration.dependencies" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="lunch.migrations.0002_auto_20210702_1647.Migration.operations">
+<code class="descname">operations</code><em class="property"> = [&lt;AlterModelOptions  name='menu', options={'permissions': (('can_create_menu', 'Can create menu'), ('can_edit_menu', 'Can edit menu'))}&gt;, &lt;AlterModelOptions  name='orders', options={'permissions': (('can_see_orders', 'Can see orders'),)}&gt;, &lt;AlterField  model_name='menuoptions', name='menu', field=&lt;django.db.models.fields.related.ForeignKey&gt;&gt;]</em><a class="headerlink" href="#lunch.migrations.0002_auto_20210702_1647.Migration.operations" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="module-lunch.migrations.0003_menu_unique_id">
+<span id="lunch-migrations-0003-menu-unique-id-module"></span><h2>lunch.migrations.0003_menu_unique_id module<a class="headerlink" href="#module-lunch.migrations.0003_menu_unique_id" title="Permalink to this headline">¶</a></h2>
+<dl class="class">
+<dt id="lunch.migrations.0003_menu_unique_id.Migration">
+<em class="property">class </em><code class="descclassname">lunch.migrations.0003_menu_unique_id.</code><code class="descname">Migration</code><span class="sig-paren">(</span><em>name</em>, <em>app_label</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/lunch/migrations/0003_menu_unique_id.html#Migration"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#lunch.migrations.0003_menu_unique_id.Migration" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">django.db.migrations.migration.Migration</span></code></p>
+<dl class="attribute">
+<dt id="lunch.migrations.0003_menu_unique_id.Migration.dependencies">
+<code class="descname">dependencies</code><em class="property"> = [('lunch', '0002_auto_20210702_1647')]</em><a class="headerlink" href="#lunch.migrations.0003_menu_unique_id.Migration.dependencies" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="lunch.migrations.0003_menu_unique_id.Migration.operations">
+<code class="descname">operations</code><em class="property"> = [&lt;AddField  model_name='menu', name='unique_id', field=&lt;django.db.models.fields.UUIDField&gt;&gt;]</em><a class="headerlink" href="#lunch.migrations.0003_menu_unique_id.Migration.operations" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="module-lunch.migrations">
+<span id="module-contents"></span><h2>Module contents<a class="headerlink" href="#module-lunch.migrations" title="Permalink to this headline">¶</a></h2>
+</div>
+</div>
+
+
+          </div>
+          
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+<h1 class="logo"><a href="index.html">backend_test</a></h1>
+
+
+
+
+
+
+
+
+<h3>Navigation</h3>
+
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="index.html">Documentation overview</a><ul>
+  </ul></li>
+</ul>
+</div>
+<div id="searchbox" style="display: none" role="search">
+  <h3>Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" />
+      <input type="submit" value="Go" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+    </div>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+
+
+
+
+
+
+
+
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;2021, Donovan Vargas.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 1.8.2</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.12</a>
+      
+      |
+      <a href="_sources/lunch.migrations.rst.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>
