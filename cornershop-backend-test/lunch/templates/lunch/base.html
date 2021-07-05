@@ -3,7 +3,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Principal</title>
+    <title>Cornershop-test</title>
 </head>
 <body>
     <p>Cornershop yeiiii</p>
@@ -14,6 +14,8 @@
         {% if not request.resolver_match.url_name == 'index'  %}
             <a href="{% url 'index'%}">Regresar</a>
         {% endif %}
+    {%else %}
+        <a href="{% url 'login'%}">Login</a>
     {% endif %}
 
     {% block content %}

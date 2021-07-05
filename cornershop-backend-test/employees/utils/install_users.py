@@ -9,6 +9,7 @@ from django.utils.crypto import get_random_string
 
 from employees.models import Employee
 
+password = '123456'
 
 def create_employees(employees_num):
     """
@@ -16,17 +17,18 @@ def create_employees(employees_num):
     :param employees_num:
     """
     for num_emp in range(employees_num):
-        username = "employee_{}".format(
-            get_random_string(5, string.ascii_letters)
-        )
+        username = "employee_{}".format(num_emp)
+        if User.objects.filter(username=username).exists():
+            print('username {} already exists'.format(username))
+            continue
         email = '{}@cornershop.com'.format(username)
-        user = User.objects.create_user(username=username, password='123456',
+        user = User.objects.get_or_create(username=username, password=password,
                                         email=email)
-        employee = Employee.objects.create(
+        Employee.objects.get_or_create(
             employee=user
         )
-        print('username: {}, uuid {}, number {}'.format(
-            username, employee.unique_id, num_emp))
+        print('username: {}, number {}'.format(
+            username, num_emp))
 
 
 def create_nora_user(username="nora"):
@@ -39,7 +41,7 @@ def create_nora_user(username="nora"):
         User.objects.get(username=username)
         print('{} already exist'.format(username))
     except User.DoesNotExist:
-        user = User.objects.create_user(username=username, password='123456',
+        user = User.objects.create_user(username=username, password=password,
                                         email=email)
         can_create_menu = Permission.objects.get(name='Can create menu')
         can_edit_menu = Permission.objects.get(name='Can edit menu')

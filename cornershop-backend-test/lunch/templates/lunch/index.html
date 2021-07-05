@@ -6,7 +6,7 @@
 {% endif %}
 <a href="{% url 'menu' %}">Ordenar menu</a>
 {% if perms.orders.can_see_orders %}
-<a href="{% url 'orders-list' %}">Ordenes del dia</a>
+<a href="{% url 'orders-list' %}">Ordenes</a>
 {% endif %}
 
 {% endblock %}

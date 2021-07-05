@@ -14,22 +14,25 @@ class Menu(models.Model):
 
     Attributes
     ----------
-    menu_user : ForeignKey
+    :menu_user: ForeignKey
         User who created menu item
-    name : CharField
+    :name: CharField
         Menu name
-    message : CharField
+    :message: CharField
         message for employees
-    date : DateField
+    :date: DateField
         date when the menu is sent to employees
-    sent : BooleanField
+    :sent: BooleanField
         if the menu was sent True
-    created : DateField
+    :created: DateField
         create date for row
-    modified : DateTimeField
+    :modified: DateTimeField
         modified date and time for row
-    active : BooleanField
+    :active: BooleanField
         logic deleted for row
+    :permissions:
+        can_create_menu: user can create a new menu menu
+        can_edit_menu: user can edit a new menu menu
     """
     unique_id = models.UUIDField(default=uuid.uuid4, editable=False,
                                  unique=True)
@@ -63,15 +66,15 @@ class MenuOptions(models.Model):
 
     Attributes
     ----------
-    menu : ForeignKey
+    :menu: ForeignKey
         Menu item
-    option : CharField
+    :option: CharField
         Options for menu
-    created : DateField
+    :created: DateField
         create date for row
-    modified : DateTimeField
+    :modified: DateTimeField
         modified date and time for row
-    active : BooleanField
+    :active: BooleanField
         logic deleted for row
     """
     menu = models.ForeignKey(
@@ -95,18 +98,21 @@ class Orders(models.Model):
 
     Attributes
     ----------
-    employee : ForeignKey
+    :employee: ForeignKey
         Employee user
-    option : ForeignKey
+    :option: ForeignKey
         Options for MenuOptions
-    customizations : TextField
+    :customizations: TextField
         customizations for employee
-    created : DateField
+    :created: DateField
         create date for row
-    modified : DateTimeField
+    :modified: DateTimeField
         modified date and time for row
-    active : BooleanField
+    :active: BooleanField
         logic deleted for row
+    :persmission:
+        can_see_orders: user can see orders view
+
     """
     employee = models.ForeignKey(Employee, on_delete=models.CASCADE,
                                  related_name="order_employee")

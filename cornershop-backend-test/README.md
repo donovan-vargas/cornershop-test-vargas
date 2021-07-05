@@ -7,8 +7,11 @@
 * `dev up`
 
 ##### Install users and nora
-
+######Creation of nora and employees
 * `sh backend_test/utils/install_users.sh`
+
+##### Project documentations open on browser
+* `docs/_build/html/index.html`
 
 ##### Rebuilding the base Docker image
 
@@ -22,3 +25,9 @@
 
 * Local: http://127.0.0.1:8000
 
+####For login
+* Local: http://127.0.0.1:8000/login
+#####As nora:
+######username: nora password: 123456
+#####As employee (employee_0 to employee_9):
+######username: employee_0 password: 123456

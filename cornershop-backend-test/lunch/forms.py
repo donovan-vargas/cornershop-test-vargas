@@ -77,15 +77,6 @@ class OrderForm(forms.ModelForm):
         customizations for employee menu option
     """
 
-    def __init__(self, user, *args, **kwargs):
-        self.user = user
-        super(OrderForm, self).__init__(*args, **kwargs)
-
-    option = forms.ModelChoiceField(
-        queryset=MenuOptions.objects.filter(menu__date=datetime.date.today(),
-                                            active=True))
-    customizations = forms.CharField(widget=forms.Textarea, required=False)
-
     def clean(self):
         """
         Override clean method to validate employee date

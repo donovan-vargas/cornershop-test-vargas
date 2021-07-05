@@ -248,5 +248,5 @@ LIMIT_HOUR = os.getenv("LIMIT_HOUR", 11)
 MENU_CREATE_HOUR = os.getenv("MENU_CREATE_HOUR", 23)
 EMPLOYEES_TIME_ZONE = "America/Santiago"
 
-
+# url
 LOCAL_SITE = os.getenv("LOCAL_SITE", "http://0.0.0.0:8000/menu/")

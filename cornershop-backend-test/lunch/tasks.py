@@ -20,7 +20,7 @@ EMPLOYEES_TIME_ZONE = getattr(settings, "EMPLOYEES_TIME_ZONE",
 LOCAL_SITE = getattr(settings, "LOCAL_SITE")
 SEND_HOUR = getattr(settings, "MENU_CREATE_HOUR")
 
-app.conf.timezone = EMPLOYEES_TIME_ZONE
+app.conf.update(timezone=EMPLOYEES_TIME_ZONE)
 
 
 @app.on_after_configure.connect
@@ -29,10 +29,8 @@ def setup_periodic_tasks(sender, **kwargs):
     Executes every Monday morning at 11:00 a.m. Santiago Chile TimeZone
     :param sender:
     """
-    sender.add_periodic_task(10.0, send_menu_employees.s(), expires=10)
-    sender.add_periodic_task(10.0, send_menu_employees.s(True), expires=10)
     sender.add_periodic_task(
-        crontab(hour=SEND_HOUR, minute=35, day_of_week=7),
+        crontab(hour=SEND_HOUR, minute=00, day_of_week=7),
         send_menu_employees().s(True),
     )
 
