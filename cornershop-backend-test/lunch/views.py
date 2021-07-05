@@ -4,6 +4,7 @@ from django.contrib import messages
 from django.contrib.auth import login, logout
 from django.contrib.auth.decorators import login_required, permission_required
 from django.contrib.auth.forms import AuthenticationForm
+from django.http import Http404
 from django.http import HttpResponseRedirect
 from django.shortcuts import render
 from django.urls import reverse_lazy
@@ -145,6 +146,12 @@ class DetailMenuView(DetailView):
     slug_url_kwarg = "unique_id"
     slug_field = "unique_id"
     template_name = "lunch/menu.html"
+
+    def get_context_data(self, **kwargs):
+        context = super().get_context_data(**kwargs)
+        if context.get('menu').date != datetime.date.today():
+            raise Http404("Menu no activo para hoy.")
+        return context
 
 
 @method_decorator(
