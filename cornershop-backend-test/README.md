@@ -7,12 +7,12 @@
 * `dev up`
 
 ##### Install users and nora
-######Creation of nora whit permissions and employees
+#####Creation of nora whit permissions and employees
 * `sh backend_test/utils/install_users.sh`
 
 ##### Project documentations, open on browser
-* `https://donovan-vargas.github.io/cornershopt-test-docs/`
-######or
+[https://donovan-vargas.github.io/cornershopt-test-docs/](https://donovan-vargas.github.io/cornershopt-test-docs/)
+#####or
 * `docs/_build/html/index.html`
 ##### settings variables settings.py 
 * `SLACK_CHANNEL` slack channel to send menus
@@ -36,9 +36,9 @@
 ####Login
 * Local: http://127.0.0.1:8000/login
 #####As nora:
-######username: nora password: 123456
+#####username: nora password: 123456
 #####As employee (employee_0 to employee_9):
-######username: employee_0 password: 123456
+#####username: employee_0 password: 123456
 ####Logut
 * Local: http://127.0.0.1:8000/logout
 ####Create new menu (login required permission required 'menu.can_create_menu')
