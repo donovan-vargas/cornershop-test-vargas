@@ -11,8 +11,9 @@
 * `sh backend_test/utils/install_users.sh`
 
 ##### Project documentations, open on browser
+* `https://donovan-vargas.github.io/cornershopt-test-docs/`
+######or
 * `docs/_build/html/index.html`
-
 ##### settings variables settings.py 
 * `SLACK_CHANNEL` slack channel to send menus
 * `SLACK_OAUTH_ACCESS_TOKEN` slack bot token
