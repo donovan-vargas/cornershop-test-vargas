@@ -137,7 +137,7 @@ class MenuCreateView(CreateView, ListView):
                 messages.success(request, "Menu creado")
                 return HttpResponseRedirect(self.get_success_url())
             else:
-                messages.success(request, "Ya hay un meno para esa fecha")
+                messages.success(request, "Ya hay un menu para esa fecha")
         return render(request, "lunch/menu_form.html", {"form": form})
 
 
