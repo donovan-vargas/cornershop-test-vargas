@@ -29,7 +29,7 @@ class MenuForm(forms.ModelForm):
     """
     name = forms.CharField(required=True)
     message = forms.CharField()
-    date = forms.DateField(required=True)
+    date = forms.DateField(required=True, widget=forms.TextInput(attrs={'placeholder': 'yyyy-mm-dd'}))
 
     def clean(self):
         """
@@ -52,10 +52,6 @@ class MenuForm(forms.ModelForm):
             if datetime.datetime.now(
                     timezone(EMPLOYEES_TIME_ZONE)) >= menu_date.replace(
                 hour=MENU_CREATE_HOUR):
-                print(datetime.datetime.now(
-                    timezone(EMPLOYEES_TIME_ZONE)))
-                print(menu_date.replace(
-                hour=MENU_CREATE_HOUR))
                 self.add_error("date", msg)
         return
 
